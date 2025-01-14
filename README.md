@@ -13,7 +13,6 @@ The repository is structured into several directories, each corresponding to a s
 - **[python-import_modules](./python-import_modules)**: Using modules and imports in Python.
 - **[python-data_structures](./python-data_structures)**: Data structures like lists and tuples.
 - **[python-more_data_structures](./0python-more_data_structures)**: Advanced concepts with dictionaries and sets.
-- **...**: *(Add the complete list of projects or modules if needed.)*
 
 ## Prerequisites
 
@@ -36,8 +35,3 @@ The repository is structured into several directories, each corresponding to a s
 ## Usage
 
 Each folder contains individual README files with specific instructions to execute and test the scripts. Follow the steps described in those files to work with the projects.
-
-## Author
-
-This project was created by Brahim H as part of the Holberton School curriculum. 
----
