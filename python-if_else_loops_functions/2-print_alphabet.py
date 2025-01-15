@@ -1,3 +1,2 @@
-alphabet = "abcdefghijklmnopqrstuvwxyz"
-for char in alphabet:
+for char in 'abcdefghijklmnopqrstuvwxyz':
     print(char, end="")
