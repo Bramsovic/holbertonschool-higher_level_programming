@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-for char in 'abcdefghijklmnopqrstuvwxyz':
-    print(char, end="")
+for number in range(97, 121):
+    print(chr(number), end="")
