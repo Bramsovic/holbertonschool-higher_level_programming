@@ -4,8 +4,8 @@ if __name__ == "__main__":
 
     from sys import argv
 
-    argv = argv[1:]  # Exclure le nom du script
-    argc = len(argv)  # Nombre d'arguments
+    argv = argv[1:]
+    argc = len(argv)
 
     if argc == 0:
         print("{} arguments.".format(argc))
