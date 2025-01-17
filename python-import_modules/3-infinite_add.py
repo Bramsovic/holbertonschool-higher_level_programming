@@ -13,4 +13,3 @@ if __name__ == "__main__":
         for arg in argv:
             count += int(arg)
         print("{}".format(count))
-        
