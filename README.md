@@ -132,6 +132,4 @@ This repository is licensed under the [MIT License](LICENSE). You are free to us
 This repository is maintained by **Holberton School students** as part of their curriculum. If you have any questions, feel free to reach out or open an issue in this repository.
 
 ---
-
 Happy coding! 🎉
-```
