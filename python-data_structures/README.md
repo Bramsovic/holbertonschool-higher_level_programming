@@ -8,6 +8,20 @@ The project is designed to deepen your understanding of Python's powerful data s
 
 ---
 
+## 📋 Table of Contents
+
+1. [📖 Description](#-description)  
+2. [🎯 Learning Objectives](#-learning-objectives)  
+3. [✅ Requirements](#-requirements)  
+4. [📂 Repository Structure](#-repository-structure)  
+5. [📚 Resources](#-resources)  
+6. [🚀 How to Run](#-how-to-run)  
+7. [📝 Task Overview](#-task-overview)  
+8. [🤝 Contribution Guidelines](#-contribution-guidelines)  
+9. [👨‍💻 Author](#-author)
+
+---
+
 ## 🎯 Learning Objectives
 By the end of this project, you should be able to explain the following concepts **without external help**:
 
