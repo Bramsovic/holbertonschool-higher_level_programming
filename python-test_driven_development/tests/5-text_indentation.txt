@@ -1,0 +1,40 @@
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+>>> text_indentation("Hello. How are you?")
+Hello.
+<BLANKLINE>
+How are you?
+
+>>> text_indentation("This is a test. Let's see: Does it work?")
+This is a test.
+<BLANKLINE>
+Let's see:
+<BLANKLINE>
+Does it work?
+
+>>> text_indentation("Multiple spaces   after punctuation.  This is good?")
+Multiple spaces after punctuation.
+<BLANKLINE>
+This is good?
+
+>>> text_indentation("  Leading and trailing spaces :   Are they handled?")
+Leading and trailing spaces:
+<BLANKLINE>
+Are they handled?
+
+>>> text_indentation("")
+<BLANKLINE>
+
+>>> text_indentation(123)
+Traceback (most recent call last):
+    ...
+TypeError: text must be a string
+
+>>> text_indentation(None)
+Traceback (most recent call last):
+    ...
+TypeError: text must be a string
+
+>>> text_indentation("Hello.    ")
+Hello.
+<BLANKLINE>
