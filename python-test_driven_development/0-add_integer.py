@@ -7,6 +7,7 @@ If floats are provided, they are truncated to integers
 before performing the addition. The result is always an integer.
 """
 
+
 def add_integer(a, b=98):
     """
     Add two integers or floats as integers.
