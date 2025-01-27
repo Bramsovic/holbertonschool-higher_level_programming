@@ -212,5 +212,4 @@ If you'd like to contribute to this project:
 
 ## 👨‍💻 Author
 
-This project is part of the **Holberton School Higher-Level Programming** curriculum.  
-```
+This project is part of the **Holberton School Higher-Level Programming** curriculum.
