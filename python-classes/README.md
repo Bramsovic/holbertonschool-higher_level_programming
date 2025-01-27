@@ -1,13 +1,12 @@
-
 # 🐍 Python - Classes and Objects
 
-This project is part of the **Holberton School Higher-Level Programming** curriculum. It introduces the fundamental concepts of **Object-Oriented Programming (OOP)** in Python. Through these tasks, you will learn how to define classes, create objects, and manage private/public attributes.
+This project is part of the **Holberton School Higher-Level Programming** curriculum. It focuses on the **fundamentals of Object-Oriented Programming (OOP)** in Python, including concepts like classes, objects, attributes, methods, and encapsulation. Through these tasks, you'll gain hands-on experience building and manipulating Python classes.
 
 ---
 
 ## 📋 Table of Contents
 
-1. [📖 Description](#-description)  
+1. [📖 Background Context](#-background-context)  
 2. [🎯 Learning Objectives](#-learning-objectives)  
 3. [✅ Requirements](#-requirements)  
 4. [📂 Repository Structure](#-repository-structure)  
@@ -26,11 +25,11 @@ This project is part of the **Holberton School Higher-Level Programming** curric
 
 ---
 
-## 📖 Description
+## 📖 Background Context
 
-In this project, you'll explore the basics of **Classes** and **Objects** in Python. You'll learn to define custom classes, use attributes, and implement methods. Additionally, you'll understand concepts like private attributes, data validation, and property management using getter and setter methods.
+It’s **VERY important** to go through all the resources provided below. Take the time to read, type (not copy-paste), and understand all the examples in the resources. Practice by experimenting with the concepts of OOP and playing with them.
 
-This project is essential for building a solid foundation in Object-Oriented Programming (OOP).
+This project is designed to help you **build a solid foundation in Object-Oriented Programming (OOP)**. The ultimate goal is to enable you to use OOP concepts effectively in Python and understand why Python programming is awesome.
 
 ---
 
@@ -39,13 +38,19 @@ This project is essential for building a solid foundation in Object-Oriented Pro
 By the end of this project, you will be able to:
 
 ### General Concepts:
-- Understand the importance of Object-Oriented Programming (OOP).
-- Define classes and create objects in Python.
-- Use private and public attributes.
-- Validate and manage data using getter and setter methods.
-- Implement custom methods such as `area()` or `my_print()`.
-- Handle optional parameters during class instantiation.
-- Work with attributes like `position` to define object-specific behaviors.
+- Understand **Object-Oriented Programming (OOP)** and the principle of "first-class everything."
+- Define and use **classes**, **objects**, and **instances** in Python.
+- Explain the difference between a **class** and an **object** (or **instance**).
+- Use **public**, **protected**, and **private attributes**.
+- Work with the `self` keyword.
+- Understand and implement **methods**, including the special `__init__` method.
+- Explain **Data Abstraction**, **Encapsulation**, and **Information Hiding**.
+- Differentiate between an **attribute** and a **property** in Python.
+- Implement getters and setters the **Pythonic way**.
+- Dynamically create new attributes for existing instances of a class.
+- Bind attributes to objects and classes.
+- Understand and utilize the `__dict__` attribute.
+- Use the `getattr()` function to retrieve object attributes dynamically.
 
 ---
 
@@ -63,6 +68,13 @@ By the end of this project, you will be able to:
     - Be **PEP 8 compliant** (`pycodestyle` version 2.7.*).
     - Be **executable**.
     - Be tested for length using the `wc` command.
+
+### Documentation
+- **Docstrings** are **mandatory** for:
+  - **Modules**: Each module must have a docstring describing its purpose.
+  - **Classes**: Each class must have a docstring describing its role.
+  - **Methods/Functions**: Each function or method (inside or outside a class) must have a docstring explaining its purpose and behavior.
+  - Use **Google Style Python Docstrings** for documentation.
 
 ### Allowed Editors:
 - `vi`, `vim`, or `emacs`.
@@ -87,10 +99,12 @@ python-classes/
 
 ## 📚 Resources
 
-To complete this project, refer to the following resources:
+To complete this project, refer to the following resources **in order**:
 
-1. [Python Documentation: Classes](https://docs.python.org/3/tutorial/classes.html)  
-2. [Python OOP Tutorial (YouTube)](https://www.youtube.com/watch?v=apACNr7DC_s)  
+1. [Object Oriented Programming (Python.org)](https://docs.python.org/3/tutorial/classes.html) (Read until the paragraph "Inheritance" excluded.)
+2. [Properties vs. Getters and Setters](https://python-course.eu/oop/properties-vs-getters-and-setters.php)  
+3. [Learn to Program 9: Object Oriented Programming (YouTube)](https://www.youtube.com/watch?v=1AGyBuVCTeE)  
+4. [Python Classes and Objects (Real Python)](https://realpython.com/python3-object-oriented-programming/)  
 
 ---
 
@@ -200,4 +214,3 @@ If you'd like to contribute to this project:
 
 This project is part of the **Holberton School Higher-Level Programming** curriculum.  
 ```
-
