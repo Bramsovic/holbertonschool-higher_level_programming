@@ -2,25 +2,39 @@
 
 The repository is organized into directories, each representing a specific topic or project. Below is an overview of the key topics covered:
 
-- **[python-hello_world](./python-hello_world)**  
+### 🐍 Python Projects
+
+- **`python-hello_world`**  
   Introduction to Python: basic syntax, script execution, and understanding indentation.
 
-- **[python-if_else_loops_functions](./python-if_else_loops_functions)**  
+- **`python-if_else_loops_functions`**  
   Mastering control flow with conditions, loops, and functions in Python.
 
-- **[python-import_modules](./python-import_modules)**  
+- **`python-import_modules`**  
   Learning how to use and manage modules, as well as working with imports.
 
-- **[python-data_structures](./python-data_structures)**  
+- **`python-data_structures`**  
   Exploring Python's core data structures, including lists and tuples.
 
-- **[python-more_data_structures](./python-more_data_structures)**  
+- **`python-more_data_structures`**  
   Advanced data manipulation using dictionaries, sets, and comprehensions.
 
-- **[SQL projects](./sql_projects)** *(if applicable)*  
-  Introduction to relational databases, SQL queries, and database management.
+- **`python-exceptions`**  
+  Handling errors and exceptions to make programs more robust and fault-tolerant.
 
-Each directory contains its own `README.md` file with detailed information about the corresponding project, its tasks, and learning objectives.
+- **`python-classes`**  
+  Introduction to Object-Oriented Programming (OOP) with Python classes and objects.
+
+- **`python-more_classes`**  
+  Advanced OOP concepts, including static methods, class methods, and instance management.
+
+- **`python-test_driven_development`**  
+  Writing and executing unit tests to ensure code correctness and reliability.
+
+### 🛢️ SQL Projects (🚧in progress🚧)  
+- **Introduction to relational databases**, SQL queries, and database management.
+
+Each directory contains its own **README.md** file with detailed information about the corresponding project, its tasks, and learning objectives.
 
 ---
 
