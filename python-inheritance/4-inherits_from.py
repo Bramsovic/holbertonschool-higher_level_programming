@@ -1,8 +1,14 @@
 #!/usr/bin/python3
-def inherits_from(obj, a_class):
+"""
+Module for inherits_from function.
+"""
 
+
+def inherits_from(obj, a_class):
     """
-    Returns True if obj is an instance of a subclass of a_class, else False.
+    Checks if obj is an instance of a subclass of a_class.
     """
     recup = type(obj)
-    return isinstance(obj, a_class) and issubclass(recup, a_class) and type(obj) is not a_class
+    return (isinstance(obj, a_class)
+            and issubclass(type(obj), a_class)
+            and type(obj) is not a_class)
