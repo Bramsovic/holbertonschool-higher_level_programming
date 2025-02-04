@@ -1,18 +1,18 @@
 #!/usr/bin/python3
 """
-Module for MyList class.
+Module defining the MyList class.
 """
 
 
 class MyList(list):
     """
-    A subclass of list that provides a method to
-    print a sorted version of the list.
+    A class that inherits from list and provides a
+    method to print the list in sorted order.
     """
-
     def print_sorted(self):
         """
-        Prints the list in ascending sorted order
-        without modifying the original list.
+        Prints the list in ascending order without
+        modifying the original list.
         """
-        print(sorted(self))
+        trie = sorted(self)
+        print(trie)
