@@ -2,7 +2,8 @@
 
 class CountedIterator(object):
     """
-    Iterator wrapper that counts the number of items iterated.
+    Iterator wrapper that counts the
+    number of items iterated.
     """
 
     def __init__(self, data):
