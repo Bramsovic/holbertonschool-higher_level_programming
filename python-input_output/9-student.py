@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+    Module class
+"""
+
+
 class Student:
     """Defines a Student with first name, last name, and age."""
 
