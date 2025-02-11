@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+    Module that returns a Python data structure from a JSON string.
+"""
 import json
 
 
