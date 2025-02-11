@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+    Module that deserializes data from a JSON file into a Python object
+"""
 import json
 
 
