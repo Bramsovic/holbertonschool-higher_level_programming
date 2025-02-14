@@ -46,8 +46,11 @@ class CustomObject:
         Returns:
             CustomObject: The deserialized object.
         """
-        with open(filename, "rb") as f:
-            return pickle.load(f)
+        try:
+            with open(filename, "rb") as f:
+                return pickle.load(f)
+        except (FileNotFoundError, pickle.PickleError):
+            return None
 
     def display(self):
         """Print the object's attributes."""
