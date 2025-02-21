@@ -52,13 +52,11 @@ class Server(BaseHTTPRequestHandler):
             dataj = json.dumps(data)
             self.wfile.write(dataj.encode("utf-8"))
 
-        elif path == '/status':
+        elif self.path == "/status":
             self.send_response(200)
-            self.send_header("Content-type", "application/json")
+            self.send_header("Content-type", "text/plain")
             self.end_headers()
-            statu = {"status": "OK"}
-            statuj = json.dumps(statu)
-            self.wfile.write(statuj.encode("utf-8"))
+            self.wfile.write(b"OK")
 
         else:
             self.send_response(404)
