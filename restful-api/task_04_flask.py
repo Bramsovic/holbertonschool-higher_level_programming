@@ -17,14 +17,7 @@ from flask import Flask, jsonify, request
 
 app = Flask(__name__)
 
-users = {
-    "jane": {
-        "username": "jane",
-        "name": "Jane",
-        "age": 28,
-        "city": "Los Angeles"
-    }
-}
+users = {}
 
 
 @app.route("/")
@@ -57,8 +50,7 @@ def data():
     Returns:
         JSON: A list of usernames.
     """
-    usernames_list = [user["username"] for user in users.values()]
-    return jsonify(usernames_list)
+    return jsonify(list(users.keys()))
 
 
 @app.route("/users/<username>")
@@ -91,19 +83,16 @@ def add_user():
         If "username" is missing, returns an error message.
     """
     global users
-    data = request.json
+    retrieved_data = request.get_json()
 
-    if "username" not in data:
+    if not retrieved_data or "username" not in retrieved_data:
         return jsonify({"error": "Username is required"}), 400
 
-    username = data["username"]
-    users[username] = data
+    username = retrieved_data["username"]
+    users[username] = retrieved_data
 
-    return jsonify({
-        "message": "User added",
-        "user": data
-    }), 201
+    return jsonify({"message": "User added", "user": users[username]}), 201
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
