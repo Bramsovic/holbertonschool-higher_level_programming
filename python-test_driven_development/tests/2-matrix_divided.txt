@@ -1,0 +1,112 @@
+Matrix Division Utility - ``2-matrix_divided`` Module
+=====================================================
+
+Overview
+--------
+
+This module provides the ``matrix_divided`` function, which returns a new matrix with all elements divided by a specified number. The result is rounded to 2 decimal places.
+
+Importing the Function
+----------------------
+
+To use the function, import it from the module:
+
+    >>> matrix_divided = __import__("2-matrix_divided").matrix_divided
+
+Usage Examples
+--------------
+
+### Standard Use Case
+
+    >>> matrix = [
+    ...     [1, 2, 3],
+    ...     [4, 5, 6]
+    ... ]
+    >>> matrix_divided(matrix, 3)
+    [[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+
+### Error Handling
+------------------
+
+Invalid Element Type
+====================
+
+An error is raised if the matrix contains non-numeric elements:
+
+    >>> matrix = [
+    ...     [1, 'a', 3],
+    ...     [4, 5, 6]
+    ... ]
+    >>> matrix_divided(matrix, 3)
+    Traceback (most recent call last):
+        TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+Unequal Row Sizes
+=================
+
+An error is raised if the rows of the matrix do not have the same size:
+
+    >>> matrix = [
+    ...     [1, 2, 3],
+    ...     [4, 5]
+    ... ]
+    >>> matrix_divided(matrix, 3)
+    Traceback (most recent call last):
+        TypeError: Each row of the matrix must have the same size
+
+Non-Numeric Divisor
+===================
+
+An error is raised if the divisor is not a number:
+
+    >>> matrix = [
+    ...     [1, 2, 3],
+    ...     [4, 5, 6]
+    ... ]
+    >>> matrix_divided(matrix, 'a')
+    Traceback (most recent call last):
+        TypeError: div must be a number
+
+Division by Zero
+================
+
+Division by zero raises an error:
+
+    >>> matrix = [
+    ...     [1, 2, 3],
+    ...     [4, 5, 6]
+    ... ]
+    >>> matrix_divided(matrix, 0)
+    Traceback (most recent call last):
+        ZeroDivisionError: division by zero
+
+Missing Arguments
+=================
+
+Divisor Not Provided:
+
+    >>> matrix = [
+    ...     [1, 2, 3],
+    ...     [4, 5, 6]
+    ... ]
+    >>> matrix_divided(matrix)
+    Traceback (most recent call last):
+        TypeError: matrix_divided() missing 1 required positional argument: 'div'
+
+Matrix and Divisor Not Provided:
+
+    >>> matrix_divided()
+    Traceback (most recent call last):
+        TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
+
+Division by Infinity
+====================
+
+Using `float('inf')` as a divisor returns 0.0 for all elements:
+
+    >>> matrix = [
+    ...     [1, 2, 3],
+    ...     [4, 5, 6]
+    ... ]
+    >>> matrix_divided(matrix, float('inf'))
+    [[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
