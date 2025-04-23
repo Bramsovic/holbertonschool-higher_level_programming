@@ -4,7 +4,7 @@ This module provides a function to add two integers or floats.
 
 The function ensures type validation for the inputs.
 If floats are provided, they are truncated to integers
-before performing the addition. The result is always an integer.
+before performing the addition.The result is always an integer.
 """
 
 
